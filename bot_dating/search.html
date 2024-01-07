@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Форма знакомств</title>
+</head>
+<body>
+   <form action="/submit" method="post">
+       <label for="whoAreYou">Кто вы?</label><br>
+       <select id="whoAreYou" name="whoAreYou">
+           <option value="boy">Парень</option>
+           <option value="girl">Девушка</option>
+       </select><br>
+
+       <label for="lookingFor">Кого вы ищете?</label><br>
+       <select id="lookingFor" name="lookingFor">
+           <option value="girl">Девушку</option>
+           <option value="boy">Парня</option>
+           <option value="couple">Пару</option>
+       </select><br>
+
+       <label for="ageFrom">Возраст от:</label>
+       <select id="ageFrom" name="ageFrom">
+           <!-- Generate options from 18 to 80 -->
+       </select>
+       <label for="ageTo">до:</label>
+       <select id="ageTo" name="ageTo">
+           <!-- Generate options from 18 to 80 -->
+       </select><br>
+
+       <label for="purpose">Цель знакомства:</label><br>
+       <select id="purpose" name="purpose">
+           <option value="any">Не важно</option>
+           <option value="now">Сейчас</option>
+           <option value="romance">Романтика</option>
+           <option value="virtual">Виртуальное общение</option>
+       </select><br>
+
+       <input type="submit" value="Поиск">
+   </form>
+</body>
+</html>
